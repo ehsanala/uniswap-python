@@ -15,7 +15,7 @@ import lru
 from web3 import Web3
 from web3.contract import Contract
 from web3.exceptions import NameNotFound
-# from web3.middleware.cache import construct_simple_cache_middleware
+from web3.middleware.cache import construct_simple_cache_middleware
 from web3.types import Middleware
 
 from .constants import (
