@@ -138,6 +138,7 @@ class Uniswap:
             self.netname = _netid_to_name[self.netid]
         else:
             raise Exception(f"Unknown netid: {self.netid}")  # pragma: no cover
+            print(f"Detected network id: {self.netid}")
         logger.info(f"Using {self.w3} ('{self.netname}', netid: {self.netid})")
 
         self.last_nonce: Nonce = self.w3.eth.get_transaction_count(self.address)
